@@ -4,7 +4,6 @@ import CardHolder from './CardHolder';
 
 const App = () => (
   <div>
-    <Sidebar />
     <CardHolder />
     {/*
     To use bootstrap components see : https://react-bootstrap.github.io/components/popovers/ 
