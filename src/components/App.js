@@ -5,6 +5,7 @@ import Country from './Country.js'
 
 const App = () => (
   <div>
+    <Country/>
     <CardHolder />
     {/*
     To use bootstrap components see : https://react-bootstrap.github.io/components/popovers/ 

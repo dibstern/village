@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-// import './css/Card.css'
-import {Card as RSCard} from 'reactstrap'
+import './css/Country.css'
+import {Card} from 'reactstrap'
 import {CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 
@@ -12,8 +12,8 @@ const wellStyles = { maxWidth: 400, margin: '0 auto 10px'};
 
 const CountryCard = (props) => {
   return (
-    <div>
-      <RSCard>
+    <div classname = "countryflag" >
+      <Card>
         <CardImg top width="100%" src={props.img} alt="Card image cap" />
         <CardBody>
           <div className="well" style={wellStyles}>
@@ -26,7 +26,7 @@ const CountryCard = (props) => {
               </Button>
           </div>
         </CardBody>
-      </RSCard>
+      </Card>
     </div>
   );
 };
