@@ -4,10 +4,12 @@ import CardHolder from './CardHolder';
 import Country from './Country.js';
 import VillageNavBar from './VillageNavBar';
 import SimpleSlider from './Slider';
+import LanguageDropDown from './Language.js'
 
 const App = () => (
   <div>
     <Country/>
+    <LanguageDropDown/>
     <CardHolder />
     <VillageNavBar id="home"/>
     <SimpleSlider/>
