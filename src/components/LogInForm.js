@@ -24,7 +24,9 @@ const LogInForm = () => (
 
   <FormGroup>
     <Col smOffset={2} sm={10}>
-      <Button type="submit">Sign in</Button>
+      <Button type="submit" a href="#home">
+      Sign in
+      </Button>
     </Col>
   </FormGroup>
 </Form>

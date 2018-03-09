@@ -17,57 +17,44 @@ const Country = () => (
       <Grid>
         <Row className="show-grid">
             <Col xs={6} md={4}>
-              <code>
                   <CountryCard 
                         button_text='Syria'
-                        button_link="http://www.google.com/"
+                        button_link="#signup"
                         img={syriaFlag}/>
-              </code>
             </Col>
             <Col xs={6} md={4}>
-              <code>
                   <CountryCard 
                         button_text='South Sudan'
-                        button_link="http://www.google.com/"
+                        button_link="#signup"
                         img={ssFlag}/>
-              </code>
             </Col>
             <Col xs={6} md={4}>
-              <code>
                   <CountryCard 
                         button_text='Afghanistan'
-                        button_link="http://www.google.com/"
+                        button_link="#signup"
                         img={afghanFlag}/>
-              </code>
             </Col>
+            </Row>
+            <Row className="show-grid">
             <Col xs={6} md={4}>
-              <code>
                   <CountryCard 
                         button_text='DRCongo'
-                        button_link="http://www.google.com/"
+                        button_link="#signup"
                         img={congoFlag}/>
-              </code>
             </Col>
             <Col xs={6} md={4}>
-              <code>
                   <CountryCard 
                         button_text='Myanmar'
-                        button_link="http://www.google.com/"
+                        button_link="#signup"
                         img={myanmarFlag}/>
-              </code>
             </Col>
             <Col xs={6} md={4}>
-              <code>
                   <CountryCard 
                         button_text='Somalia'
-                        button_link="http://www.google.com/"
+                        button_link="#signup"
                         img={somaliaFlag}/>
-              </code>
             </Col>
         </Row>
-       
-
-  
 </Grid>
  
 </div>

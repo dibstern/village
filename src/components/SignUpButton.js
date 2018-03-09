@@ -19,12 +19,12 @@ class SignUpButton extends React.Component {
     render() {
       return (
   <div style={wellStyles}>
-    <Button bsStyle="warning" bsSize="large" block>
+    <Button id="signup" bsStyle="warning" bsSize="large" block>
       Sign Up
     </Button>
     <br/>
-    <a onClick={this.onClick.bind(this)} href='#'>
-    <Button bsSize="large" block>
+    <a onClick={this.onClick.bind(this)} href='#login'>
+    <Button id="login" bsSize="large" block>
       Log In
     </Button>
     </a>

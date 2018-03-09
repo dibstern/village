@@ -25,6 +25,15 @@
   font-size: 15pt;
 }
 
+.personParagraph {
+  font-size: 10pt;
+}
+
+.personButton {
+  width: 50%;
+  margin-left: 15%;
+}
+
 .buttonStyle {
   margin-top: 20%;
   align-self: flex-end;
