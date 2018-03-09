@@ -13,15 +13,21 @@
 
 .text {
   text-align: left;
+  font-family: 'Franklin Gothic Medium';
   margin-left: 5%;
 }
 .cardTitle {
-  size: 50pt;
-  margin-top: 5%;
+  font-size: 30pt;
+  font-family: 'Franklin Gothic Medium';
 }
 
 .cardParagraph {
-  size: 20pt;
+  font-size: 15pt;
+}
+
+.buttonStyle {
+  margin-top: 20%;
+  align-self: flex-end;
 }
 
 
