@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import CardHolder from './CardHolder';
+import Country from './Country.js' 
 
 const App = () => (
   <div>
