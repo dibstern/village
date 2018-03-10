@@ -18,7 +18,7 @@ export default class SimpleSlider extends React.Component {
         slidesToScroll: 5
       };
       return (
-        <div>
+        <div style={{'paddingLeft' : '5%'}}>
           <h2> My Connections </h2>
           <Slider {...settings}>
           <div><h3><PersonCard 

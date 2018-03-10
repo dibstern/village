@@ -15,12 +15,12 @@ const PersonCard = (props) => {
   return (
     <div>
       <Card>
-        <CardImg center width="80%" src={props.img} alt="Card image cap" />
+        <CardImg className="cardImage" src={props.img} alt="Card image cap" />
         <CardBody>
           <section className = "personParagraph">
-          <p> Name: {props.name} </p>
-          <p> Phone Number: {props.mobile} </p>
-          <p> Type: {props.type} </p>
+          Name: {props.name} <br/>
+          Phone Number: {props.mobile} <br/>
+          Type: {props.type}
           
               <Button className = "personButton"
                   outline color="info"
