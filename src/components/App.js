@@ -11,9 +11,7 @@ import LanguageDropDown from './Language.js'
 
 const App = () => (
   <div>
-    <Country/>
-    <LanguageDropDown/>
-    <CardHolder />
+
     <VillageNavBar id="home"/>
     <br/>
     <ProgressInstance/>

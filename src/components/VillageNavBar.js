@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { Input, Menu } from 'semantic-ui-react'
+
 import 'semantic-ui-css/semantic.min.css';
+import React, { Component } from 'react'
+import { Button, Dropdown, Menu } from 'semantic-ui-react'
 
-
-export default class MenuExampleSecondary extends Component {
+export default class MenuExampleSizeMassive extends Component {
   state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -12,15 +12,22 @@ export default class MenuExampleSecondary extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu secondary>
+      <Menu size='massive' color="red">
         <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
         <Menu.Item name='messages' active={activeItem === 'messages'} onClick={this.handleItemClick} />
-        <Menu.Item name='friends' active={activeItem === 'friends'} onClick={this.handleItemClick} />
+
         <Menu.Menu position='right'>
+          <Dropdown item text='Language'>
+            <Dropdown.Menu>
+              <Dropdown.Item>English</Dropdown.Item>
+              <Dropdown.Item>Russian</Dropdown.Item>
+              <Dropdown.Item>Spanish</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
           <Menu.Item>
-            <Input icon='search' placeholder='Search...' />
+            <Button primary>Sign Up</Button>
           </Menu.Item>
-          <Menu.Item name='logout' active={activeItem === 'logout'} onClick={this.handleItemClick} />
         </Menu.Menu>
       </Menu>
     )
