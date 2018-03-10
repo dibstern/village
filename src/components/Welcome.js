@@ -5,9 +5,9 @@ import avatar from '../img/avatar_welcome.jpg';
 
 
 const WelcomeMessage = () => (
-  <Header as='h1' align='center'>
+  <Header as='h1' >
     <Image circular src={avatar} />
-    {' '}Welcome Ali
+    {' '}Welcome John
   </Header>
 )
 

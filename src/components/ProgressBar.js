@@ -7,7 +7,7 @@ const now = 60;
 const ProgressInstance = () => ( 
    <div className="body"> 
 <h3> Village Level </h3>
-<ProgressBar bsStyle="success" now={now} label={`${now}%`} />
+<ProgressBar bsStyle="success" now={now} label={`${now}%`}  align= "center"/>
 </div>
 );
 

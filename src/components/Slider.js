@@ -1,11 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
 import PersonCard from './PersonCard';
-import Man from '../img/man1.jpg';
-import Man2 from '../img/man2.jpg';
-import Man3 from '../img/man3.jpeg';
-import Man4 from '../img/man4.jpg';
-import Man5 from '../img/man5.jpg';
+import Man from '../img/buddy.jpeg';
+import Man2 from '../img/doctor_connected.jpg';
+import Man3 from '../img/father.jpg';
+import Man4 from '../img/translator.jpg';
+import Man5 from '../img/coder.jpg';
 
 
 export default class SimpleSlider extends React.Component {
@@ -28,40 +28,42 @@ export default class SimpleSlider extends React.Component {
                     type = "Buddy"
                     button_text = "Contact"
                     button_link = "#" 
+                    
           
           /></h3></div>
           <div><h3><PersonCard 
                     img = {Man2}
-                    name = "David Stern"
+                    name = "Ujash Patel"
                     mobile = "0401231232"
-                    type = "Buddy"
+                    type = "Doctor"
+                    button_text = "Contact"
+                    button_link = "#" 
+          
+          /></h3></div>
+           <div><h3><PersonCard 
+                    img = {Man4}
+                    name = "Judie Williams"
+                    mobile = "0401231232"
+                    type = "Translator"
                     button_text = "Contact"
                     button_link = "#" 
           
           /></h3></div>
           <div><h3><PersonCard 
                     img = {Man3}
-                    name = "David Stern"
+                    name = "Father Joseph"
                     mobile = "0401231232"
-                    type = "Buddy"
+                    type = "Bishop"
                     button_text = "Contact"
                     button_link = "#" 
           
           /></h3></div>
-          <div><h3><PersonCard 
-                    img = {Man4}
-                    name = "David Stern"
-                    mobile = "0401231232"
-                    type = "Buddy"
-                    button_text = "Contact"
-                    button_link = "#" 
-          
-          /></h3></div>
+         
           <div><h3><PersonCard 
                     img = {Man5}
-                    name = "David Stern"
+                    name = "Lucie James"
                     mobile = "0401231232"
-                    type = "Buddy"
+                    type = "Coding Mentor"
                     button_text = "Contact"
                     button_link = "#" 
           

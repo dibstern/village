@@ -4,12 +4,31 @@ import SimpleSlider from './Slider';
 import MyFancyComponent from './Map';
 import ProgressInstance from './ProgressBar';
 import ServiceHolder from './ServiceHolder';
+import { Container, Row, Col } from 'reactstrap';
+import WelcomeMessage from './Welcome';
+
+
 
 const Home = () => (
   <div>
     <VillageNavBar id="home"/>
+    <Container>
+        <Row>
+          <Col>
+            <WelcomeMessage/>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col xs="6" sm="3"><ProgressInstance/></Col>
+          <Col xs="6" sm="3"></Col>
+          <Col xs="6" sm="3"></Col>
+          
+          <Col xs="6" sm="3"></Col>
+        </Row>
+    </Container>
     <br/>
-    <ProgressInstance/>
+   
     <br/>
     <SimpleSlider/>
     <br/>
