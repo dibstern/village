@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import SignUpButton from "./SignUpButton";
+import Login from "./Login";
 import Doctor from "./Doctor";
 import Home from "./Home";
 
@@ -17,7 +17,7 @@ class ModalSwitch extends React.Component {
       <div>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/login" component={SignUpButton} />
+          <Route path="/login" component={Login} />
           <Route path="/doctor" component={Doctor} />
         </Switch>
       </div>

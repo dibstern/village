@@ -5,7 +5,7 @@ import LogInForm from './LogInForm';
 
 const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
 
-class SignUpButton extends React.Component {
+class Login extends React.Component {
     constructor() {
       super();
       this.state = {
@@ -19,11 +19,8 @@ class SignUpButton extends React.Component {
     render() {
       return (
         <div style={wellStyles}>
-          <Button id="signup" bsStyle="warning" bsSize="large" block>
-            Sign Up
-          </Button>
-          <br/>
           <a onClick={this.onClick.bind(this)} href='#login'>
+            <br/>
             <Button id="login" bsSize="large" block>
               Log In
             </Button>
@@ -35,4 +32,4 @@ class SignUpButton extends React.Component {
     }
 };
 
-export default SignUpButton;
+export default Login;
