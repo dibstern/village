@@ -76,7 +76,7 @@ export default class SimpleSlider extends React.Component {
           
           /></h3></div>
           <div><h3><PersonCard 
-                    img = {Man4}
+                    img = {Man3}
                     name = "David Stern"
                     mobile = "0401231232"
                     type = "Buddy"
@@ -85,7 +85,7 @@ export default class SimpleSlider extends React.Component {
           
           /></h3></div>
           <div><h3><PersonCard 
-                    img = {Man3}
+                    img = {Man4}
                     name = "David Stern"
                     mobile = "0401231232"
                     type = "Buddy"
