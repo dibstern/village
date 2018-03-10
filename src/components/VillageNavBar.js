@@ -1,7 +1,9 @@
 
 import 'semantic-ui-css/semantic.min.css';
 import React, { Component } from 'react'
-import { Button, Dropdown, Menu } from 'semantic-ui-react'
+import { Input, Menu } from 'semantic-ui-react'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import 'semantic-ui-css/semantic.min.css';
 
 export default class MenuExampleSizeMassive extends Component {
   state = { activeItem: 'home' }
@@ -12,8 +14,10 @@ export default class MenuExampleSizeMassive extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu size='massive' color="red">
-        <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+      <Menu secondary>
+        <Link to="/home">
+          <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+        </Link>
         <Menu.Item name='messages' active={activeItem === 'messages'} onClick={this.handleItemClick} />
 
         <Menu.Menu position='right'>
@@ -28,6 +32,9 @@ export default class MenuExampleSizeMassive extends Component {
           <Menu.Item>
             <Button primary>Sign Up</Button>
           </Menu.Item>
+          <Link to="/login">
+            <Menu.Item name='logout' active={activeItem === 'logout'} onClick={this.handleItemClick} />
+          </Link>
         </Menu.Menu>
       </Menu>
     )
