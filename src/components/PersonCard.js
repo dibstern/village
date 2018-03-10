@@ -26,6 +26,7 @@ const PersonCard = (props) => {
                   size="large"
                   block
                   href={ props.button_link }>
+                  
                       {props.button_text}
               </Button>
           </section>
