@@ -1,9 +1,7 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
 import './css/CardHolder.css'
 import {Card} from 'reactstrap'
-import {CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button} from 'reactstrap';
+import {CardImg, CardBody, Button} from 'reactstrap';
 import FA from 'react-fontawesome';
 
 // Uses https://reactstrap.github.io/components/card/
