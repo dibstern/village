@@ -14,7 +14,7 @@ export default class MenuExampleSizeMassive extends Component {
 
     return (
       <Menu secondary>
-        <Link to="/home">
+        <Link to="/">
           <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
         </Link>
         <Menu.Item name='messages' active={activeItem === 'messages'} onClick={this.handleItemClick} />
