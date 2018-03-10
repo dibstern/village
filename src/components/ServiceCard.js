@@ -17,20 +17,14 @@ const PersonCard = (props) => {
       <Card>
         <CardImg center width="80%" src={props.img} alt="Card image cap" />
         <CardBody>
-          <section className = "personParagraph">
-          <p> Name: {props.name} </p>
-          <p> Phone Number: {props.mobile} </p>
-          <p> Type: {props.type} </p>
           
               <Button className = "personButton"
-                  outline color="info"
+                  color=""
                   size="large"
                   block
                   href={ props.button_link }>
-                  <FA name="comment" />
                       {props.button_text}
               </Button>
-          </section>
         </CardBody>
       </Card>
     </div>
