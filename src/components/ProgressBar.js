@@ -2,12 +2,10 @@ import React from 'react';
 import {ProgressBar} from 'react-bootstrap';
 import './css/CardHolder.css';
 
-const now = 60;
-
 const ProgressInstance = () => ( 
    <div className="body"> 
-<h3> Village Level </h3>
-<ProgressBar bsStyle="success" now={now} label={`${now}%`}  align= "center"/>
+<h3> Your Village Size </h3>
+<ProgressBar bsStyle="success" now='60' label={`5 connections`}  align= "center"/>
 </div>
 );
 

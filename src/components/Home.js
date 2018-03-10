@@ -21,10 +21,6 @@ const Home = () => (
 
         <Row>
           <Col xs="6" sm="3"><ProgressInstance/></Col>
-          <Col xs="6" sm="3"></Col>
-          <Col xs="6" sm="3"></Col>
-          
-          <Col xs="6" sm="3"></Col>
         </Row>
     </Container>
     <br/>

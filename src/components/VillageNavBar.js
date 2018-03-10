@@ -24,7 +24,7 @@ export default class MenuExampleSizeMassive extends Component {
             <Dropdown.Menu>
               <Dropdown.Item>English</Dropdown.Item>
               <Dropdown.Item>Arabic</Dropdown.Item>
-              <Dropdown.Item>Spanish</Dropdown.Item>
+              <Dropdown.Item>Pashto</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 

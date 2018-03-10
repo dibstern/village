@@ -7,7 +7,7 @@ import avatar from '../img/avatar_welcome.jpg';
 const WelcomeMessage = () => (
   <Header as='h1' >
     <Image circular src={avatar} />
-    {' '}Welcome John
+    Welcome Abdullah
   </Header>
 )
 
