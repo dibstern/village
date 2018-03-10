@@ -5,12 +5,17 @@ import Country from './Country.js';
 import VillageNavBar from './VillageNavBar';
 import SimpleSlider from './Slider';
 import MyFancyComponent from './Map';
+import ProgressInstance from './ProgressBar';
+import ServiceHolder from './ServiceHolder';
 
 const App = () => (
   <div>
     <Country/>
     <CardHolder />
     <VillageNavBar id="home"/>
+    <br/>
+    <ProgressInstance/>
+    <br/>
     <SimpleSlider/>
     <br/>
     <MyFancyComponent
@@ -18,7 +23,8 @@ const App = () => (
   loadingElement={<div style={{ height: `100%` }} />}
   containerElement={<div style={{ height: `400px` }} />}
   mapElement={<div style={{ height: `100%` }} />}/>
-
+    <br/>
+    <ServiceHolder/>
     {/*
     To use bootstrap components see : https://react-bootstrap.github.io/components/popovers/ 
     First import the component from react-bootstrap
