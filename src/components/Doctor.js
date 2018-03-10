@@ -5,13 +5,19 @@ import MyFancyComponent from './Map';
 import ProgressInstance from './ProgressBar';
 import ServiceHolder from './ServiceHolder';
 
-const Home = () => (
+const Doctor = () => (
   <div>
     <VillageNavBar id="home"/>
     <br/>
     <ProgressInstance/>
     <br/>
     <SimpleSlider/>
+    <br/>
+    <MyFancyComponent
+  googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFM4v4ZB4gYCWukuBHF0rv0rTVl5gn40M&v=3.exp&libraries=geometry,drawing,places"
+  loadingElement={<div style={{ height: `100%` }} />}
+  containerElement={<div style={{ height: `400px` }} />}
+  mapElement={<div style={{ height: `100%` }} />}/>
     <br/>
     <ServiceHolder/>
     {/*
