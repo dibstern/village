@@ -10,6 +10,7 @@ import car from '../img/car.png'
 import house from '../img/house.png'
 import translator from '../img/translator.png'
 import books from '../img/books.png'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const ServiceHolder = () => (
   <div>
@@ -35,10 +36,12 @@ const ServiceHolder = () => (
                         img={groceries}/>
             </Col>
             <Col xs={4} md={3}>
-                  <ServiceCard 
-                        button_text='Medical'
-                        button_link="#signup"
-                        img={medical}/>
+                  <Link to="/doctor">
+                        <ServiceCard 
+                              button_text='Medical'
+                              button_link="#signup"
+                              img={medical}/>
+                  </Link>
             </Col>
             </Row>
             <Row className="show-grid">

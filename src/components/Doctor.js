@@ -3,15 +3,13 @@ import VillageNavBar from './VillageNavBar';
 import SimpleSlider from './Slider';
 import MyFancyComponent from './Map';
 import ProgressInstance from './ProgressBar';
-import ServiceHolder from './ServiceHolder';
+import DoctorHolder from './DoctorHolder';
 
 const Doctor = () => (
   <div>
-    <VillageNavBar id="home"/>
+    <VillageNavBar/>
     <br/>
-    <ProgressInstance/>
-    <br/>
-    <SimpleSlider/>
+    <DoctorHolder/>
     <br/>
     <MyFancyComponent
   googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFM4v4ZB4gYCWukuBHF0rv0rTVl5gn40M&v=3.exp&libraries=geometry,drawing,places"
@@ -19,7 +17,6 @@ const Doctor = () => (
   containerElement={<div style={{ height: `400px` }} />}
   mapElement={<div style={{ height: `100%` }} />}/>
     <br/>
-    <ServiceHolder/>
     {/*
     To use bootstrap components see : https://react-bootstrap.github.io/components/popovers/ 
     First import the component from react-bootstrap
@@ -28,4 +25,4 @@ const Doctor = () => (
   </div>
 );
 
-export default Home;
+export default Doctor;

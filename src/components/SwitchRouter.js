@@ -1,11 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import SignUpButton from "./SignUpButton";
+import Doctor from "./Doctor";
 import Home from "./Home";
 
 
 // To add a new page, add a route to the switch & add the <Link> to the 
 // VillageNavBar.
+// Also add "import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";"
+// to the page on which <Link> is located!
 
 class ModalSwitch extends React.Component {
 
@@ -15,6 +18,7 @@ class ModalSwitch extends React.Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/login" component={SignUpButton} />
+          <Route path="/doctor" component={Doctor} />
         </Switch>
       </div>
     );
