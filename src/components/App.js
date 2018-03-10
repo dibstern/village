@@ -4,12 +4,19 @@ import SimpleSlider from './Slider';
 import MyFancyComponent from './Map';
 import ProgressInstance from './ProgressBar';
 import ServiceHolder from './ServiceHolder';
+import WelcomeMessage from './Welcome';
+import Login from './FormLogin';
+
 
 const App = () => (
   <div>
+
     <VillageNavBar id="home"/>
     <br/>
+
+    <WelcomeMessage/>
     <ProgressInstance/>
+    <Login/>
     <br/>
     <SimpleSlider/>
     <br/>
