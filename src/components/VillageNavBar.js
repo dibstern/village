@@ -1,7 +1,6 @@
-
 import 'semantic-ui-css/semantic.min.css';
 import React, { Component } from 'react'
-import { Input, Menu } from 'semantic-ui-react'
+import { Input, Menu, Dropdown, Button } from 'semantic-ui-react'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import 'semantic-ui-css/semantic.min.css';
 
@@ -29,9 +28,6 @@ export default class MenuExampleSizeMassive extends Component {
             </Dropdown.Menu>
           </Dropdown>
 
-          <Menu.Item>
-            <Button primary>Sign Up</Button>
-          </Menu.Item>
           <Link to="/login">
             <Menu.Item name='logout' active={activeItem === 'logout'} onClick={this.handleItemClick} />
           </Link>
