@@ -35,6 +35,7 @@ $('#signupButton').click(function(){
             $("#closeFormModal").click();
             console.log("Show success modal");
             $("#showSuccessModal").click();
+            console.log(data);
 
         }
       });

@@ -16,8 +16,8 @@ class ModalSwitch extends React.Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/home" component={Home} />
-          <Route path="/login" component={Login} />
+          <Route exact path="/login" component={Login} />
+          <Route path="/home" component={Home} />
           <Route path="/doctor" component={Doctor} />
         </Switch>
       </div>

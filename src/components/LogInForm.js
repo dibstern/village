@@ -9,7 +9,8 @@ import {
   withRouter
 } from "react-router-dom";
 
-const API_LOGIN = 'http://localhost:8000/login';
+const API = 'http://localhost:8000/'
+const API_LOGIN = API + 'login';
 
 
 class LogInForm extends Component {
@@ -89,9 +90,6 @@ class LogInForm extends Component {
         </Col>
       </FormGroup>
     </Form>
-    this.state.username = {this.state.username}
-    <br/>
-    this.state.password = {this.state.password}
     </div>
     </Router>
   )};
@@ -107,11 +105,6 @@ class LogInForm extends Component {
 
 
   login = (username, password) => {
-    this.postApiLogin(username, password);
-  };
-
-
-  postApiLogin = (username, password) => {
     fetch(API_LOGIN, {
       method: 'POST',
       body: "username=" + username + "&password=" + password,
@@ -124,6 +117,7 @@ class LogInForm extends Component {
       console.log(j);
       if (j.status === 0) {
         this.setState({valid: true})
+        window.location = '/home/' + username;
       }
     })
   };
