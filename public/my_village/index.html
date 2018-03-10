@@ -52,7 +52,7 @@ font-family: arial; }
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Log in</a>
+              <a class="nav-link js-scroll-trigger" href="#login">Log in</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#features">FAQ</a>
@@ -148,7 +148,7 @@ font-family: arial; }
       </div>
     </footer>
 
-    <div class="container">
+    <div class="container" id="formModal">
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -156,7 +156,7 @@ font-family: arial; }
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title" id="exampleModalLabel">Lets get to know you</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeFormModal">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -190,38 +190,38 @@ font-family: arial; }
         <div id="registrationPanel" style="display:none">
             <p>Your personal details</p>
 
-<!-- Material form contact -->
-<form>
-    <!-- Material input text -->
-      <input name="country" type="hidden" id="countryTextbox">
-      <input name="language" type="hidden" id="languageTextbox">
+            <!-- Material form contact -->
+            <form>
+                <!-- Material input text -->
+                  <input name="country" type="hidden" id="countryTextbox">
+                  <input name="language" type="hidden" id="languageTextbox">
 
-      <div class="form-group">
-          <label for="name"><small>Your name</small></label>
-          <input type="text" class="form-control" id="name" placeholder="Enter name">
-      </div>
+                  <div class="form-group">
+                      <label for="name"><small>Your name</small></label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter name">
+                  </div>
 
-      <div class="form-group">
-          <label for="username"><small>Choose username</small></label>
-          <input type="text" class="form-control" id="username" placeholder="Enter username">
-      </div>
+                  <div class="form-group">
+                      <label for="username"><small>Choose username</small></label>
+                      <input type="text" class="form-control" id="username" placeholder="Enter username" required="required"/>
+                  </div>
 
-      <div class="form-group">
-          <label for="password"><small>Enter Password</small></label>
-          <input type="password" class="form-control" id="password" placeholder="Enter password">
-      </div>
+                  <div class="form-group">
+                      <label for="password"><small>Enter Password</small></label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter password">
+                  </div>
 
 
-      <div class="form-group">
-          <label for="city"><small>Your  Host City</small></label>
-          <input type="text" class="form-control" id="city" placeholder="Enter city">
-      </div>
-      <a name="Sign up" class="form-control btn btn-primary" id="signupButton"><span style="color:white">Sign Up</span></a>
-      <hr />
-      <button class="btn-si btn-facebook form-control">Sign in with Facebook </button>
+                  <div class="form-group">
+                      <label for="city"><small>Your  Host City</small></label>
+                      <input type="text" class="form-control" id="city" placeholder="Enter city">
+                  </div>
+                  <a name="Sign up" class="form-control btn btn-primary" id="signupButton"><span style="color:white">Sign Up</span></a>
+                  <hr />
+                  <button class="btn-si btn-facebook form-control">Sign in with Facebook </button>
 
-</form>
-<!-- Material form contact -->
+            </form>
+            <!-- Material form contact -->
                       
         </div> 
 
@@ -235,6 +235,35 @@ font-family: arial; }
 </div>
 
 <!-- model ends -->
+
+
+
+
+<!-- Success modal -->
+<!-- Modal -->
+<a href="#" data-toggle="modal" data-target="#successModal" id="showSuccessModal">.</a>
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up successful</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       You will be redirected to the login page momentarily.
+
+      <br />
+      <a href="/">Click here to go to login page</a>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Success modal ends -->
 </div>
 
     <!-- Bootstrap core JavaScript -->

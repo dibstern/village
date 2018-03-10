@@ -26,11 +26,16 @@ $('#signupButton').click(function(){
     var url = 'http://127.0.0.1:8000/profile';
     var datatype = 'application/json';
 
-    // perform fucking ajax
     $.ajax({
         type: "POST",
         url: url,
         data: payload,
-        success: function(data) {alert(JSON.stringify(data))}
+        success: function(data) {
+            // alert(JSON.stringify(data))
+            $("#closeFormModal").click();
+            console.log("Show success modal");
+            $("#showSuccessModal").click();
+
+        }
       });
 });
