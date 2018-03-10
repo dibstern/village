@@ -1,7 +1,5 @@
 import React from 'react';
-import Card from './Card';
 import ServiceCard from './ServiceCard';
-import Carousel from './Carousel';
 import {Button, Grid, Row, Col} from 'react-bootstrap';
 import './css/CardHolder.css';
 import mother from '../img/mother.png'

@@ -1,19 +1,12 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import CardHolder from './CardHolder';
-import Country from './Country.js';
 import VillageNavBar from './VillageNavBar';
 import SimpleSlider from './Slider';
 import MyFancyComponent from './Map';
 import ProgressInstance from './ProgressBar';
 import ServiceHolder from './ServiceHolder';
-import LanguageDropDown from './Language.js'
 
 const App = () => (
   <div>
-    <Country/>
-    <LanguageDropDown/>
-    <CardHolder />
     <VillageNavBar id="home"/>
     <br/>
     <ProgressInstance/>
