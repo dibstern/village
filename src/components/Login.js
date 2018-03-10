@@ -1,33 +1,30 @@
 import React from 'react';
-import './css/Card.css';
-import { Button } from 'react-bootstrap';
 import LogInForm from './LogInForm';
+import './css/NewAge.css';
+import ref2 from '../img/refugee2.png'
 
-const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
-
-class Login extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        showReply: false
-      }
-    }
-    onClick(e){
-      e.preventDefault();
-      this.setState({showReply: !this.state.showReply})
-    }
+class Login  extends React.Component {
     render() {
+
+        var divStyle = {width: '100%', height:'200px', display: 'block'}
+        var imgStyle = {verticalAlign: 'middle', 'width': '80%', height: 'auto', 'padding-top':'100px', 'padding-left':'50px'}
       return (
-        <div style={wellStyles}>
-          <a onClick={this.onClick.bind(this)} href='#login'>
-            <br/>
-            <Button id="login" bsSize="large" block>
-              Log In
-            </Button>
-          </a>
-          <br/>
-          {this.state.showReply && <LogInForm/>}
+        <header class="masthead">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-lg-7 my-auto">
+              <div class="header-content mx-auto">
+              <div style={divStyle}></div>
+              <h2>Login to your village</h2>
+              <LogInForm/>
+                </div>
+            </div>
+            <div class="col-lg-5 my-auto">
+              <img src={ref2} style={imgStyle}/>
+            </div>
+          </div>
         </div>
+      </header>
 )
     }
 };
